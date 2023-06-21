@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:rgb(32, 2, 32);
+    
+/* font-family: 'Oswald', sans-serif; */
+   
+}
+.container {
+    max-width:80%;
+    /* background-color: rgb(195, 138, 248); */
+    padding:34px;
+    margin:auto;
+}
+.container h1,p {
+    
+font-family: 'Oswald', sans-serif;
+    text-align:center;
+}
+.btn {
+    color:white;
+    background-color: purple;
+    padding:8px 12px;
+    font-size: 20px;
+    border:2px solid white;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:300px;
+
+}
+.bg {
+    width:100%;
+    position:absolute;
+    z-index:-1;
+    opacity: 0.6;
+}
+.SubmitMSG {
+    color:rgb(3, 58, 3);
+    font-size: 15px;
+}
