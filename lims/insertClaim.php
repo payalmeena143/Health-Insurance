@@ -74,7 +74,7 @@ tr:nth-child(even) {
                     <div class="col-md-12">
                         <h1 class="page-head-line">Insert Claim
 						<button class="btn" align="center"> 
-                        <a href="addNominee.php" class="btn">Add Claim</a>
+                        <a href="addClaim.php" class="btn">Add Claim</a>
                         </button>
 						</h1>
                     
