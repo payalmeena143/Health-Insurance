@@ -78,7 +78,7 @@ $client_id       = $_GET["client_id"];
                     
                 
 
-<form action="insertNominee.php" method="post">
+<form action="insertClaim.php" method="post">
 
 Claim ID:    <input type="text" name="claim_id" value="<?php echo"$uniqueId2"; ?>"required><br>
 Claim Date:          <input type="text" name="claim_date" required><br>
