@@ -65,7 +65,7 @@
                           
                  </li>     
                  <li>
-                      <a href="nominee.php"><i class="fa fa-heart "></i>CLAIMS</a>
+                      <a href="claim.php"><i class="fa fa-heart "></i>CLAIMS</a>
                             
                  </li> 
                  <li>
