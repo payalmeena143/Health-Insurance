@@ -92,7 +92,7 @@ include'connection.php';
 		$claim_id      = $_POST["claim_id"];
 		$client_id       = $_POST["client_id"];
 		$claim_date             = $_POST["claim_date"];
-        $disease_name      = $_POST["disease_name"];
+        	$disease_name      = $_POST["disease_name"];
 		$hospital_name    = $_POST["hospital_name"];
 		$status        = $_POST["status"];
 		$reason           = $_POST["reason"];

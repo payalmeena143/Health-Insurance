@@ -101,11 +101,11 @@ tr:nth-child(even) {
 	while($row = $result->fetch_assoc()) {
 		
 		echo "<label for=\"fname\">CLAIM ID</label>";
-	    echo "<input type=\"text\" claim_id=\"fname\" name=\"claim_id\" placeholder=\"claim id..\" value=\"$row[claim_id]\">";
+	    	echo "<input type=\"text\" claim_id=\"fname\" name=\"claim_id\" placeholder=\"claim id..\" value=\"$row[claim_id]\">";
 		echo "<label for=\"fname\">CLIENT ID</label>";
-	    echo "<input type=\"text\" claim_id=\"fname\" name=\"client_id\" placeholder=\"client id..\" value=\"$row[client_id]\">";
+	    	echo "<input type=\"text\" claim_id=\"fname\" name=\"client_id\" placeholder=\"client id..\" value=\"$row[client_id]\">";
 		echo "<label for=\"fname\">CLAIM DATE</label>";
-	    echo "<input type=\"text\" claim_id=\"fname\" name=\"claim_date\" placeholder=\"claim date..\" value=\"$row[claim_date]\">";
+	    	echo "<input type=\"text\" claim_id=\"fname\" name=\"claim_date\" placeholder=\"claim date..\" value=\"$row[claim_date]\">";
 		echo "<label for=\"fname\">DISEASE NAME</label>";
 		echo "<input type=\"text\" claim_id=\"fname\" name=\"disease_name\" placeholder=\"disease name..\" value=\"$row[disease_name]\">";
 		echo "<label for=\"fname\">HOSPITAL NAME</label>";

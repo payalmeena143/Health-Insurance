@@ -88,16 +88,16 @@ include'connection.php';
 	$result = $conn->query($sql);
 	
 	echo "<table class=\"table\">\n";
-    echo "  <tr>\n";
+    	echo "  <tr>\n";
 	echo "    <th>CLAIM ID</th>\n";
-    echo "    <th>CLIENT ID</th>\n";
+    	echo "    <th>CLIENT ID</th>\n";
 	echo "    <th>CLAIM DATE</th>\n";
-    echo "    <th>DISEASE NAME</th>\n";
+    	echo "    <th>DISEASE NAME</th>\n";
 	echo "    <th>HOSPITAL NAME</th>\n";;
-    echo "    <th>STATUS</th>\n";
-    echo "    <th>REASON</th>\n";
-    echo "    <th>VIEW</th>\n";
-    echo "  </tr>";
+    	echo "    <th>STATUS</th>\n";
+    	echo "    <th>REASON</th>\n";
+    	echo "    <th>VIEW</th>\n";
+    	echo "  </tr>";
 	
 	if ($result->num_rows > 0) {
     // output data of each row
