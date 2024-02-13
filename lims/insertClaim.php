@@ -83,8 +83,8 @@ tr:nth-child(even) {
 include'connection.php';
         
 		$claim_id         = $_POST["claim_id"];
-        $claim_date       = $_POST["claim_date"];
-	    $client_id        = $_POST["client_id"];
+        	$claim_date       = $_POST["claim_date"];
+	    	$client_id        = $_POST["client_id"];
 		$disease_name     = $_POST["disease_name"];
 		$hospital_name    = $_POST["hospital_name"];
 		$status           = $_POST["status"];
