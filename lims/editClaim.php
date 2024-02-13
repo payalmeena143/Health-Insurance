@@ -96,7 +96,7 @@ tr:nth-child(even) {
 	
 	echo "<div>\n";
 	
-	  echo '<form action="updateNominee.php" method="post">';
+	  echo '<form action="updateClaim.php" method="post">';
 	   
 	while($row = $result->fetch_assoc()) {
 		
@@ -120,7 +120,7 @@ tr:nth-child(even) {
 	
 	echo "<input type=\"submit\" value=\"UPDATE\">";
 	echo "</form>\n";
-	echo "<a href='deleteNominee.php?nominee_id=".$claim_id."'>Delete Nominee</a>";
+	echo "<a href='deleteClaim.php?claim_id=".$claim_id."'>Delete Claim</a>";
 	
 	
 	

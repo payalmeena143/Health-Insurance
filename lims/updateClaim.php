@@ -53,7 +53,7 @@ tr:nth-child(even) {
 </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Insert Nominee</title>
+    <title>Update Nominee</title>
     <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
@@ -72,35 +72,44 @@ tr:nth-child(even) {
             
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-head-line">Insert Claim
+                        <h1 class="page-head-line">Update Claim
 						<button class="btn" align="center"> 
-                        <a href="addNominee.php" class="btn">Add Claim</a>
+                        <a href="addClaim.php" class="btn">Add Claim</a>
                         </button>
 						</h1>
                     
-<?php
-	
+                
+				
+
+<?php 
+
 include'connection.php';
-        
-		$claim_id         = $_POST["claim_id"];
-        $claim_date       = $_POST["claim_date"];
-	    $client_id        = $_POST["client_id"];
-		$disease_name     = $_POST["disease_name"];
+	
+	$claim_id = $client_id  = $claim_date = $disease_name = $hospital_name = $status = $reason ="";
+	
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+		
+		$claim_id      = $_POST["claim_id"];
+		$client_id       = $_POST["client_id"];
+		$claim_date             = $_POST["claim_date"];
+        $disease_name      = $_POST["disease_name"];
 		$hospital_name    = $_POST["hospital_name"];
-		$status           = $_POST["status"];
+		$status        = $_POST["status"];
 		$reason           = $_POST["reason"];
+
+	}
+	$sql = "UPDATE claims set claim_id='$claim_id', client_id='$client_id', claim_date='$claim_date',  disease_name='$disease_name', hospital_name='$hospital_name', status='$status', reason='$reason' where claim_id='$claim_id'";
 		
-	
-		
-	$sql = "INSERT INTO claims "."VALUES('$claim_id', '$claim_date', '$client_id', '$disease_name', '$hospital_name', '$status', '$reason')";
-	
-	if ($conn->query($sql) === true) {
-			echo "New Claim ADDED";
+		if ($conn->query($sql) === true) {
+			echo "Record updated successfully";
 		} else {
 			echo "Error: " . $sql . "<br>" . $conn->error;
 		}
-
+		
+		
 ?>
+
+	
 
                 </div>
 
@@ -112,5 +121,12 @@ include'connection.php';
     </div>
     <!-- /. WRAPPER  -->
 
+   
+    
+
+
 </body>
 </html>
+
+
+
